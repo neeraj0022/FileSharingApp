@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  height: 100vh;
+  background-color: rgb(14, 11, 50);
+  overflow: hidden;
+  display: flex;
+  font-family: 'Baloo Bhai 2'
+}
+
+.img{
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+}
+
+.wrapper{
+  background-color: rgb(203, 230, 255);
+  margin: auto;
+  height: 390px;
+  width: 590px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+button{
+  width: 100px;
+  height: 40px;
+  background-color: darkblue;
+  border: 1px solid darkblue;
+  border-radius: 10px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+}
