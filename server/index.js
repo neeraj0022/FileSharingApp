@@ -12,6 +12,19 @@ const app =express();
 app.use(cors());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+
+import { fileURLToPath } from 'url';
+import { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
+
+import path from 'path';
+
+const buildPath = path.join(__dirname, '../client/build');
+
+app.use(express.static(buildPath));
+
 app.use('/', router);
 
 DBConnection();
